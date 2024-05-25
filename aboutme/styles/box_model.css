@@ -1,0 +1,15 @@
+footer {
+    background-color: steelblue;
+    color: white;
+}
+
+footer p {
+    padding: 25px;
+}
+
+nav {
+    background-color: steelblue;
+}
+a {
+    color: white;
+}

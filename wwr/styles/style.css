@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
+    font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+    font-size: 22px;
     background-color: #f7f7ff;
+    margin: 0;
+    padding: 0;
 }
 
 #content {
@@ -20,11 +26,16 @@ nav a {
     text-align: center;
     color: #f7f7ff;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
     background-color: #395366;
     color: #f7f7ff;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -39,6 +50,10 @@ nav a:hover {
     background-color: #d4ac0d;
     color: #f7f7ff;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -54,12 +69,21 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .home-title {
+    font-family: "Noto Serif", Arial, Helvetica, sans-serif;
+    font-size: 2em;
     color: #000000;
+    margin-top: 10px;
 }
 
 .msg {
     background-color: #d4ac0d;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 b.msg {
@@ -67,16 +91,21 @@ b.msg {
 }
 
 .msg h2 {
+    font-family: "Noto Serif", Arial, Helvetica, sans-serif;
     color: #000000;
 }
 
 .msg p {
     color: #000000;
+    font-size: 1.2em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color: #d4ac0d;
     color: #000000;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
@@ -96,10 +125,35 @@ footer a:hover {
     color: #f7f7ff;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
+h2 {
+    margin: 0;
+}
+
 h4 {
     color: #f7f7ff;
 }
 
 .icon {
-    width: 80;
+    width: 80px;
+    padding-top: 10px;
+}
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+
+.mountains-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #000;
 }
