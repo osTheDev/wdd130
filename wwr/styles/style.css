@@ -63,8 +63,8 @@ nav a:hover {
 #logo_link {
     padding-top: 5px;
     padding-left: 5px;
-    justify-self: center;
-    align-self: center;
+    /* justify-self: center;
+    align-self: center; */
 }
 
 #hero-msg {
@@ -103,6 +103,7 @@ nav a:hover {
 
 .button-box {
     text-align: center;
+    margin: 100px;
 }
 
 main section {
