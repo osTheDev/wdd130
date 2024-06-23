@@ -244,6 +244,74 @@ h4 {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+.rivers-grid {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    grid-row: 1fr, 1fr, 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.rivers-text {
+    margin: 0;
+}
+
+.rivers-card-img {
+    border: 1px solid #000;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.rivers-banner-img {
+    border: 5px solid #000;
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.river1-card {
+    display: contents;
+}
+
+.river1-card img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.river1-card p {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.river2-card {
+    display: contents;
+}
+
+.river2-card img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.river2-card p {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.river3-card {
+    display: contents;
+}
+
+.river3-card img {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.river3-card p {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
