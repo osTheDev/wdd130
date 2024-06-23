@@ -246,14 +246,16 @@ h4 {
 
 .rivers-grid {
     display: grid;
-    grid-template-columns: 1fr, 2fr;
-    grid-row: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    align-items: center;
 }
 
 .rivers-text {
     margin: 0;
+    text-align: center;
 }
 
 .rivers-card-img {
@@ -261,14 +263,31 @@ h4 {
     width: 100%;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.banner-container {
+    position: relative;
+    text-align: center;
 }
 
 .rivers-banner-img {
-    border: 5px solid #000;
     width: 100%;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
+    height: auto;
+    display: block;
 }
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+}
+
 
 .river1-card {
     display: contents;
@@ -277,6 +296,7 @@ h4 {
 .river1-card img {
     grid-column: 1/2;
     grid-row: 1/2;
+    gap: 50px;
 }
 
 .river1-card p {
@@ -291,6 +311,7 @@ h4 {
 .river2-card img {
     grid-column: 1/2;
     grid-row: 2/3;
+    gap: 50px;
 }
 
 .river2-card p {
@@ -305,6 +326,7 @@ h4 {
 .river3-card img {
     grid-column: 1/2;
     grid-row: 3/4;
+    gap: 50px;
 }
 
 .river3-card p {
