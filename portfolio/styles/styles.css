@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,6 +31,7 @@ header img {
 
 .title {
     font-size: 24px;
+    font-family: "DM Mono";
     font-weight: bold;
     color: #ccc;
 
@@ -79,10 +82,11 @@ nav a:hover {
     color: #f7f7ff;
 }
 
-.aws-card {
+.card-img {
     grid-column: 2/3;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 5px solid #000000;
 }
 
 .firebase-card {
@@ -96,5 +100,14 @@ nav a:hover {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #EAC435;
+    color: #000000;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(DM Mono);
+}
+
+p, a {
+    font-family: "DM Mono";
+}
