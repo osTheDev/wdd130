@@ -50,7 +50,7 @@ header img {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(10px, 1fr, 10px, 1fr, 10px, 1fr, 10px, 1fr, 10px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 footer {
@@ -89,19 +89,42 @@ nav a:hover {
     border: 5px solid #000000;
 }
 
-.firebase-card {
-    grid-column: 4/5;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.aws-card {
+    grid-column: 1/2;
 }
 
-.aws-card button,
-.firebase-card button {
-    padding: 10px 20px;
-    font-size: 16px;
+.firebase-card {
+    grid-column: 3/4;
+}
+
+.aws-card button {
+    grid-column: 2/3;
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
     cursor: pointer;
     background-color: #EAC435;
     color: #000000;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.firebase-card button {
+    grid-column: 4/5;
+    font-size: 24px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #EAC435;
+    color: #000000;
+    margin: 10px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 h1, h2, h3, h4, h5, h6 {
