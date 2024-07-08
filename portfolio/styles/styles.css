@@ -47,7 +47,7 @@ header img {
 
 .home-grid {
     display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(10px, 1fr, 10px, 1fr, 10px, 1fr, 10px, 1fr, 10px);
 }
 
 footer {
@@ -78,3 +78,23 @@ nav a:hover {
     background-color: #EAC435;
     color: #f7f7ff;
 }
+
+.aws-card {
+    grid-column: 2/3;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.firebase-card {
+    grid-column: 4/5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aws-card button,
+.firebase-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
