@@ -31,10 +31,9 @@ header img {
 
 .title {
     font-size: 24px;
-    font-family: "DM Mono";
+    font-family: "DM Mono", monospace;
     font-weight: bold;
     color: #ccc;
-
 }
 
 .menu {
@@ -50,7 +49,7 @@ header img {
 
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 footer {
@@ -97,8 +96,7 @@ nav a:hover {
     grid-column: 3/4;
 }
 
-.aws-card button {
-    grid-column: 2/3;
+.aws-card button, .firebase-card button {
     font-size: 24px;
     width: 200px;
     height: 50px;
@@ -108,31 +106,15 @@ nav a:hover {
     margin: 10px;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.firebase-card button {
-    grid-column: 4/5;
-    font-size: 24px;
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
-    background-color: #EAC435;
-    color: #000000;
-    margin: 10px;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(DM Mono);
+    font-family: "DM Mono", monospace;
 }
 
 p, a, button {
-    font-family: "DM Mono";
+    font-family: "DM Mono", monospace;
 }
 
 .container {
@@ -143,14 +125,11 @@ p, a, button {
 }
 
 img:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
     animation: shake 0.5s;
-  
-    /* When the animation is finished, start again */
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
+}
+
+@keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
@@ -162,4 +141,4 @@ img:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
