@@ -129,6 +129,42 @@ img:hover {
     animation-iteration-count: infinite;
 }
 
+.aws-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-item {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+}
+
+.grid-item.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item.text h2 {
+    margin-top: 0;
+}
+
+.grid-item.text p {
+    margin-bottom: 0;
+}
+
+
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
